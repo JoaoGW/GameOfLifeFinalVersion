@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1666369525 source:d:\códigos_programação\códigos\code_blocks\jogodavida\jogodavida\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<locale.h>
+	"Functions.h"
+	"salvar-carregar.txt"
+
+1666375740 d:\códigos_programação\códigos\code_blocks\jogodavida\jogodavida\functions.h
+
+1666375843 d:\códigos_programação\códigos\code_blocks\jogodavida\jogodavida\salvar-carregar.txt
+
+1666565387 source:c:\users\joao pedro\downloads\jogo_da_vida-main\jogodavida (para_entregar)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<unistd.h>
+	<locale.h>
+	"controller.h"
+
+1666562254 c:\users\joao pedro\downloads\jogo_da_vida-main\jogodavida (para_entregar)\functions.h
+	"view.h"
+
+1666565146 c:\users\joao pedro\downloads\jogo_da_vida-main\jogodavida (para_entregar)\view.h
+
+1666562254 c:\users\joao pedro\downloads\jogo_da_vida-main\jogodavida (para_entregar)\controller.h
+	"view.h"
+
