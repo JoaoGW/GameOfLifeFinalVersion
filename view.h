@@ -1,5 +1,5 @@
-int maximoEixoX = 20;
-int maximoEixoY = 20;
+int maximoEixoX = 20; //Valor máximo em X
+int maximoEixoY = 20; //Valor máximo em Y
 int numGeracaoAtual = 0; //Indica qual a geração que o programa se encontra atualmente
 
 //exporta o mapa do jogo de uma tela para outra mantendo o jogo funcionando
@@ -42,28 +42,28 @@ void mostrarGeracaoSeguinte(int geracaoSeguinte[100][100]) {
 			auxComanY++;
 		}
 		int quociente = maximoEixoX / 2;
-		printf("||");
+		printf("||%d",auxComanX+1);
 
 		if (auxComanX == quociente - 2) {
 			printf("\tNúmero de células vivas é: %d", qtdSeresVivos(geracaoSeguinte));
 		}
 		if (auxComanX == quociente) {
-			printf("\tPara inserir seres vivos digite P");
+			printf("\t1 - Para inserir seres vivos");
 		}
 		if (auxComanX == quociente + 1) {
-			printf("\tPara salvar digite S");
+			printf("\t2 - Para salvar");
 		}
 		if (auxComanX == quociente + 2) {
-			printf("\tPara avançar digite A");
+			printf("\t3 - Para avançar");
 		}
 		if (auxComanX == quociente + 3) {
-			printf("\tPara simular automaticamente digite J");
+			printf("\t4 - Para simular automaticamente");
 		}
 		if (auxComanX == quociente + 4) {
-			printf("\tPara voltar ao menu anterior digite M");
+			printf("\t5 - Para voltar ao menu anterior");
 		}
 		if (auxComanX == quociente + 5) {
-			printf("\tPara fazer a limpeza das células do mundo digite X");
+			printf("\t6 - Para fazer a limpeza das células do mundo");
 		}
 		printf("\n");
 		auxComanX++;

@@ -222,18 +222,18 @@ int qtdSeresVivos(int geracaoSeguinte[100][100]) {
 }
 
 //carrega um jogo salvo de um arquivo externo
-void carregarJogo(int matrizJogo[100][100], bool preVisualizacao) {
+void carregarJogo(int matrizJogo[60][60], bool preVisualizacao) {
 
-	char *nomeFileSaveLoad = "salvar-carregar.txt";
+	//char *nomeFileSaveLoad = "salvar-carregar.txt";
 	FILE *arquivo;
 	char linhasTotais[100];
 	char *resultado;
 
 	int i;
-	arquivo = fopen(nomeFileSaveLoad, "rt");
+	arquivo = fopen("salvar-carregar.txt", "r");
 
 	if (arquivo == NULL) {
-		printf("Problemas na abertura do arquivo: %s\n", nomeFileSaveLoad);
+		printf("Problemas na abertura do arquivo: %s\n", "salvar-carregar.txt");
 		return;
 	}
 	i = 0;

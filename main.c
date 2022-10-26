@@ -53,7 +53,7 @@ int main() {
             printf("Tudo pronto para comecarmos a jogar! ;) \n");
 
             int autoGerarSeres = 0; //captura e salva quantas vezes uma geracao automatica será realizada
-            int atrasoGeracao = 0; //faz o atraso (delay) entre uma geracao e outra
+            float atrasoGeracao = 0; //faz o atraso (delay) entre uma geracao e outra
             bool tudoCerto = true; //Checa o status se está tudo em conformidade para fazer a proxima geracao
 
             while (!0) {
@@ -73,13 +73,13 @@ int main() {
                 copiarGeracao(matrizJogo, geracaoSeguinte);
 
                 if (autoGerarSeres != 0) {
-                    sleep(1);
+                    sleep(atrasoGeracao);
                     autoGerarSeres--;
                 }
                 else {
-                    char ch = _getch();
-                    printf("%c", ch);
-                    if (ch == 's' || ch == 'S') {
+                    int escolha = 0;
+                    scanf("%d", &escolha);
+                    if (escolha == 2) {
                         FILE *f = fopen("salvar-carregar.txt", "w");
                         if (f == NULL) {
                             printf("Erro ao abrir o arquivo\n");
@@ -109,31 +109,33 @@ int main() {
                         continue;
                     }
 
-                    if (ch == 'j' || ch == 'J') {
+                    if (escolha == 4) {
                         limparTela();
 
                         printf("Quantas vezes você deseja simular automaticamente as gerações?\n");
                         scanf(" %d", &autoGerarSeres);
 
-                        printf("Quantos segundos de atraso (delay) ?\n");
-                        scanf(" %d", &atrasoGeracao);
+                        printf("Quantos segundos de atraso (delay utilizando virgula) ?\n");
+                        scanf(" %f", &atrasoGeracao);
                     }
-                    if (ch == 'm' || ch == 'M') {
+                    if (escolha == 5) {
+                        printf("Levando você de volta para o menu do jogo. Por favor aguarde...\n")/
+                        sleep(2);
                         main();
                     }
-                    if (ch == 'x' || ch == 'X') {
+                    if (escolha == 6) {
                         limpezaTotal(matrizJogo);
                     }
-                    if (ch == 'p' || ch == 'P') {
+                    if (escolha == 1) {
                         limparTela();
 
                         int opcao = 0;
                         printf("Escolha um padrão para ser carregado.\n");
                         printf("Ao escolher um padrão o seu jogo será deletado.");
-                        printf("\nSair: -1\nInserir Manualmente: 0\nBlinker: 1\nToad: 2\nGlider: 3\n");
+                        printf("\nSair: 99\nInserir Manualmente: 0\nBlinker: 1\nToad: 2\nGlider: 3\n");
                         scanf(" %d", &opcao);
 
-                        if(opcao == -1){
+                        if(opcao == 99){
                             tudoCerto = false;
                             continue;
                         }

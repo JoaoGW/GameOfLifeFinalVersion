@@ -27,3 +27,16 @@
 1666562254 c:\users\joao pedro\downloads\jogo_da_vida-main\jogodavida (para_entregar)\controller.h
 	"view.h"
 
+1666794933 source:c:\users\ra00320039\downloads\gameoflifefinalversion-main\gameoflifefinalversion-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<unistd.h>
+	<locale.h>
+	"controller.h"
+
+1666795433 c:\users\ra00320039\downloads\gameoflifefinalversion-main\gameoflifefinalversion-main\controller.h
+	"view.h"
+
+1666794806 c:\users\ra00320039\downloads\gameoflifefinalversion-main\gameoflifefinalversion-main\view.h
+
