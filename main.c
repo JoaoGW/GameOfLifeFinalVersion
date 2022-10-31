@@ -111,12 +111,31 @@ int main() {
 
                     if (escolha == 4) {
                         limparTela();
-
+                        int tempo = 0;
                         printf("Quantas vezes você deseja simular automaticamente as gerações?\n");
                         scanf(" %d", &autoGerarSeres);
 
+                        printf("Opções pré definidas:\n 1-1 segundo\n 2-3 segundos\n 3-5 segundos\n 4-10 segundos\n 5-20 segundos\n 6-Escolher outro tempo\n");
+                        scanf(" %d", &tempo);
+                        if(tempo == 1){
+                            atrasoGeracao = 1;
+                        }
+                         if(tempo == 2){
+                            atrasoGeracao = 3;
+                        }
+                         if(tempo == 3){
+                            atrasoGeracao = 5;
+                        }
+                         if(tempo == 4){
+                            atrasoGeracao = 10;
+                        }
+                         if(tempo == 5){
+                            atrasoGeracao = 20;
+                        }
+                         if(tempo == 6){
                         printf("Quantos segundos de atraso (delay utilizando virgula) ?\n");
                         scanf(" %f", &atrasoGeracao);
+                        }
                     }
                     if (escolha == 5) {
                         printf("Levando você de volta para o menu do jogo. Por favor aguarde...\n")/

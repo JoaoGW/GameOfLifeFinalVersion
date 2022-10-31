@@ -40,3 +40,16 @@
 
 1666794806 c:\users\ra00320039\downloads\gameoflifefinalversion-main\gameoflifefinalversion-main\view.h
 
+1667228132 source:c:\users\ra00320039\downloads\gameoflifefinalversion-main (1)\gameoflifefinalversion-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<unistd.h>
+	<locale.h>
+	"controller.h"
+
+1667227291 c:\users\ra00320039\downloads\gameoflifefinalversion-main (1)\gameoflifefinalversion-main\controller.h
+	"view.h"
+
+1667227291 c:\users\ra00320039\downloads\gameoflifefinalversion-main (1)\gameoflifefinalversion-main\view.h
+
